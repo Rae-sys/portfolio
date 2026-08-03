@@ -24,7 +24,9 @@
     padding: 4%;
     border-radius: 14%;
 }
-
+ .icon {
+  display: none;
+}
 header{
     position:fixed ;
     top: 0;
@@ -68,7 +70,9 @@ header{
     background-color: #0720fb;
     border:none;
 }
+.head i{
 
+}
 @media (max-width: 768px){
     .head{
     display: flex;
@@ -432,6 +436,11 @@ b{
      box-shadow: 20px 20px 20px  rgba(4, 4, 4, 0.861);
 }
 @media (max-width: 600px){
+    .icon{
+        display: block;
+    cursor: pointer;
+
+    }
     .contact-box input,
     .contact-box textarea{
       font-size: 9px;
@@ -439,12 +448,22 @@ b{
     .contact h1 {
         font-size: 22px;
     }
+      nav ul {
+      display: none !important;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background-color: #cce5f8;
+
+  }
     
 .contact-box button{
     font-size: 9px;
     padding: 5% 2%;
 }
 }
+
 footer{
     background-color: #063b63;
     padding: 2% ;
