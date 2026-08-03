@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
@@ -30,17 +30,22 @@ header{
     top: 0;
     left: 0;
     right: 0;
+      z-index: 9999;
 }
 .head h3{
-    margin-right:50% ;
+    margin-right:50px ;
     font-size: 25px;
 }
 .head ul li{
     display: inline-block;
-    padding: 8px px ;
+    padding: 8px;
     margin: 0 25px;
     position: relative;
 
+}
+.head a:hover{
+    color: aqua;
+    transition: 2s;
 }
 .head a{
     color: white;
@@ -70,7 +75,18 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-
+.head ul{
+     display: flex;
+    align-items: center;
+    gap: 2px;
+    margin-left:20%;
+    padding: 0;
+}
+ 
+  .head h3 {
+    margin-right: 10px;
+    font-size: 18px;
+  }
 .head a{
     font-size: 12px;
 }
@@ -78,6 +94,9 @@ header{
 
     padding: 30% 10%;
     text-align: center;
+}
+.about-image{
+    display: block;
 }
 }
 
@@ -87,19 +106,44 @@ header{
     justify-content: space-between;
 }
 .head ul li{
-    display: inline-block;
-    padding: 8px 9px ;
-    margin: 0 5px;
+    padding: 5px 6px ;
+    margin: 0 ;
     position: relative;
 }
-.cod{
-
-    margin-top: 1% ;
-    
+.head ul{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 0%;
 }
+.cod{
+    display: flex;
+    width: 100%;
+    margin-top: 1% ;
+}
+.head h3 {
+    margin:0 10px;
+    font-size: 18px;
+  }
 span{
     color: blue;
 }
+.hero{
+    margin-top: 35%;
+}
+
+}
+
+
+@media (max-width: 1355px){
+   .head h3 {
+    margin-right: 120px;
+    font-size: 18px;
+    text-align: left;
+  } 
+  .head{
+       padding-bottom: 1%;
+  }
 }
 .cod{
     margin-top:5%  ;
@@ -108,6 +152,7 @@ span{
 .hero{
     padding-top: 8%;
 }
+ 
 .hero h1{
     padding: 1% ;
     font-size: 4vw;
@@ -174,22 +219,236 @@ span{
     }
     .about{
         background-color: #cce5f8;
-        padding:10% ;
+        padding:5% ;
 
     }
     hr{
-        position: absolute;
+        
         padding:0 30%;
         left: 30px;
         right: 30px;
         background-color: gray;
 
     }
+    .box {
+        position: relative;
+    }
+
+    #about {
+  scroll-margin-top: 80px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 .about-image {
     display: flex;
+    justify-content: space-between;
+    
 }
-.about-image img{
-    width: 60%;
+.box img{
+    
+    width: 100%;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 8%;
+    padding: 5%;
+}
+.btn{
+    position: absolute;
+    bottom: 12%;
+    line-height: 1.8;
+    left: 30px;
+    background-color:rgb(204, 229, 248) ;
+    border-radius: 8px;
+    padding: 12px 8px;
+   
+}
+span{
+    color: #0720fb;
+}
+.about-text{
+    margin: 3%;
+}
+.blue{
+    color: #0720fb;
+    padding: 3% 0;
+    font-style: italic;
+}
+.about-text h1{
+    font-size: 4vw;
+     font-family: "Playfair Display", serif;
+     padding:0 0% 0 10%;
+}
+.about-text p{
+    padding: 2% 20% 2% 10%;
+    color: gray;
+    line-height: 1.8;
+    font-size: 16px;
+}
+b{
+    color: rgb(57, 56, 56);
+}
+.skills{
+     background-color: #cce5f8;
+        padding:2% ;
+        text-align: center;
+}
+.skills p{
+      border-radius: 100%;
+    background-color: #0720fb;
+    margin: 2%;
+    color: white;
+    font-size: 22px;
+}
+
+.p{
+        display: flex;
+        justify-content: center;
+}
+
+.ht{
+    padding: 3% 2%;
+}
+.cs{
+    padding: 3%;
+}
+
+
+/*portfolio*/
+.port{
+    display: flex;
+    flex-wrap: wrap;
+      background-color: #063b63;
+}
+.port-1{
+   margin: 10px;
+   background-image: linear-gradient(rgba(0, 183, 255, 0.315), rgba(3, 3, 3, 0.418) ), url("back.jpg");
+   background-size: cover;
+   background-position: center;
+   border-radius: 5%;
+   background-repeat: no-repeat;
+   width: 350px;
+}
+.port-body img{
+    width: 100% ;
+    height: 200px;
+    object-fit: contain;
+    object-position: center;
+    margin-right: 1%;
+    
+     
+}
+.port-head{
+    display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+    padding: 2%;
+}
+
+.port-head{
+    font-size: 20px;
+}
+.port-body h2{
+    margin-bottom: 2%;
+    padding: 2% 7%;
+}
+.port-body{
+    color: rgb(224, 231, 237);
+}
+.port-body h4{
+    margin-bottom: 3%;
+    padding: 2% 7%;
+}
+/* contact section */
+.contact{
+    padding-top: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #cce5f8;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+.contact-text{
+    text-align: center;
+}
+.contact-text h1{
+    margin-bottom: 4%;
+}
+.contact-info{
+    padding: 8%;
+}
+.contact-info p{
+    padding: 5%;
+}
+.contact-info h3{
+    padding: 3%;
+}
+.contact-text p{
+    padding: 0% 15%;
+    line-height: 1.4;
+}
+.contact-box{
+    display: block;
+    width: 40%;
+    margin-top: 7%;
+    padding: 8%;
+      background-image: linear-gradient(rgba(0, 183, 255, 0.315), rgba(3, 3, 3, 0.418) ), url("back.jpg");
+   background-size: cover;
+   background-position: center;
+   border-radius: 2%;
+   background-repeat: no-repeat;
+    box-shadow: 0 0 20px  rgba(46, 45, 45, 0.514);
+    margin-bottom: 5%;
+}
+.contact-box h1{
+    color: aliceblue;
+    margin-bottom: 2%;
+    text-align: center;
+}
+.contact-box input,
+.contact-box textarea{
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #645f7d;
+    color: aliceblue;
+    font-size: 1rem;
+    padding: 3% 0;
+    margin-bottom: 5%;
+    outline:none;
+}
+.contact-box textarea{
+    resize: none;
+}
+.contact-box button{
+    display: block;
+    margin: 4% auto 0;
+    padding: 5% 10%;
+    background-color:#063b63;
+    border: none;
+    border-radius: 4%;
+    color: aliceblue;
+     box-shadow: 20px 20px 20px  rgba(4, 4, 4, 0.861);
+}
+@media (max-width: 600px){
+    .contact-box input,
+    .contact-box textarea{
+      font-size: 9px;
+    }
+    .contact h1 {
+        font-size: 22px;
+    }
+    
+.contact-box button{
+    font-size: 9px;
+    padding: 5% 2%;
+}
+}
+footer{
+    background-color: #063b63;
+    padding: 2% ;
+    text-align: center;
+    color: aliceblue;
+    font-size:0.5vw;
 }
